@@ -6,7 +6,7 @@ pipeline {
         stage('Building our image') {
             steps {
                 script {
-                    dockerImage = docker.build "wagongilles/petclinic:$BUILD_NUMBER"
+                    dockerImage = docker.build "wagong/petclinic:$BUILD_NUMBER"
                 }
             }
         }
